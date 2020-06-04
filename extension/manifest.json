@@ -1,0 +1,30 @@
+{
+  "name": "Note it",
+  "description": "Note down the selected text in the files of your notes directory using Native messaging host",
+  "browser_action": {
+   "default_icon": "src/note16.png",
+   "default_popup": "popup.html"
+  },
+   "permissions": [
+					"notifications",
+					"contextMenus",
+                    "nativeMessaging",
+                    "tabs",
+                    "activeTab",
+                    "background",
+                    "http://*/", "https://*/"
+                    ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "src/note16.png",
+	"32": "src/note32.png",
+    "48": "src/note48.png",
+    "128": "src/note128.png"
+  },
+ 
+  "version": "1.0",
+  "minimum_chrome_version": "29",
+  "manifest_version": 2
+}
