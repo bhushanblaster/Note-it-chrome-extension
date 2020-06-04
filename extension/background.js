@@ -11,7 +11,7 @@ function onFileClickListner(info,tab)
 	if(filename === "Write a new file")
 		filename = "new file";
 		//window.alert(filename);
-	var port = chrome.runtime.connectNative('com.dolby.native_messaging_host');
+	var port = chrome.runtime.connectNative('com.noteit.native_messaging_host');
 	port.onMessage.addListener(function(message,sender){
 		
 			//window.alert(message.addedtext)
@@ -45,7 +45,7 @@ function onFileClickListner(info,tab)
 
 function GetAllFiles(){
 	
-	var port = chrome.runtime.connectNative('com.dolby.native_messaging_host');
+	var port = chrome.runtime.connectNative('com.noteit.native_messaging_host');
 	
 	port.onMessage.addListener(function(message,sender)
 	{
