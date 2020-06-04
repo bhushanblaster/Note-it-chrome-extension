@@ -1,0 +1,9 @@
+{
+  "name": "com.dolby.native_messaging_host",
+  "description": "Native messaging host",
+  "path": "NativeMessagingHost.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://gngjohnhjmlcaajmmlgpnlipcpdmmhhn/"
+  ]
+}
